@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>GUI ki tayiyaari</title>
+        <script src="eel.js"></script>
+        <script src="make_pdf.js"></script>
+    </head>
+    <body>
+        <nav>
+            <h1>CERTS</h1>
+        </nav>
+        <section>
+            <div class="main-excel">
+                <div class="excel-input">
+                    <p>Data</p>
+                    <p id="excel_path" class="path-box">Your excel file path.</p>
+                    <button class="button" onclick="get_excel()">Choose file</button>
+                </div>
+                <div class="data-display" id="data-display"></div>
+            </div>
+            <div class="ppt-input">
+                <p>Ppt</p>
+                <p id="ppt_path" class="path-box">Your ppt file path.</p>
+                <button class="button" onclick="get_ppt()">Choose file</button>
+                <p>Choose color.</p>
+                <input type="color" value="#ffffff" id="color">
+                <p id="hex"></p>
+                <div class="makepdfs">
+                <p id="save_path" class="path-box">Your output path.</p>
+                <button class="button" onclick="get_save()">Choose output folder</button>
+                <button id="make-but" class="make-button" onclick="make_pdf">START</button></div>
+            </div>
+        </section>
+    </body>
+</html>
